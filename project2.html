@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <style>
+  
+    header {
+      text-align: center;
+      background: url('https://i.ibb.co/dBZnrQj/blog-bg.jpg');
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    a:hover{
+      color: red;
+    }
+    h1 {
+      font-family: Helvetica;
+      text-shadow: 3px 3px rgba(255,0,0,0.3);
+    }
+    img#author {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 100%;
+      width: 9em;
+      height:9em;
+    }
+    article img{
+     width: 100%; 
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,200,110,0.4);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0px auto;
+      background: #f5f5f5;
+      border-radius: 5px;
+      margin-bottom: 1em;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+    button{
+     border-radius: 5px;
+     padding: .5em 2em;
+     color:  rgba(0,200,110,1);
+    }
+    button:hover{
+       background: rgba(0,200,110,0.5);
+       color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img id="author" src="https://i.ibb.co/dBP6b4s/pas.jpg">
+    <h1>Most Beautiful Places in the world  </h1>
+    <h6>by: Alexander</h6>
+    <ul>
+      <li><a href="#" style="border-bottom: solid ">Nature</a> | </li>
+      <li><a href="#">Academics</a> | </li>
+      <li><a href="#">Sport</a> </li>
+    </ul>
+  </header>
+  <article>
+  <img src="https://media.cntraveler.com/photos/5654e99b5e7aeb7a6e218121/master/w_820,c_limit/salar-de-uyuni-bolivia-cr-getty.jpg" />
+    <h2>Keukenhof Park, Holland: The Netherlands</h2>
+    <p>Holland is known around the world for its rainbow-hued fields of tulips, especially those located in and around Keukenhof. Millions of bulbs are planted in the park each year—visit in mid-April to see the flowers during their peak season.</p>
+    <button>Like</button>
+  </article>
+  <article>
+  <img src="https://media.cntraveler.com/photos/56556bb35e7aeb7a6e2183e0/master/w_820,c_limit/tulips-windmill-holland-cr-getty.jpg">
+    <h2>Cappadocia, Turkey</h2>
+    <p>Cappadocia, an area in Turkey where entire cities have been carved into rock, is pretty incredible on its own. But whenever hot-air balloons pepper the sky, its beauty level simply skyrockets.</p>
+    <button>Like</button>
+  </article>
+  <article>
+  <img src="https://media.cntraveler.com/photos/5654e99b5e7aeb7a6e218121/master/w_820,c_limit/salar-de-uyuni-bolivia-cr-getty.jpg" />
+    <h2>Forage food truck keytar master cleanse</h2>
+    <p>ethical thundercats sustainable locavore quinoa Neutra. Aesthetic tacky sweater single-origin coffee, bicycle rights organic lo-fi street art american apparel ennui four loko ethnic Brooklyn small batch. Forage YOLO polaroid</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
